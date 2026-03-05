@@ -161,47 +161,47 @@ personal-finance-tracker/
 ### Phase 2 — Frontend
 
 #### 2.1 Project Configuration
-- [ ] Install additional dependencies: `npm install recharts`
-- [ ] Install dev dependencies: `npm install -D vitest @testing-library/react @testing-library/jest-dom @vitejs/plugin-react jsdom`
-- [ ] Create `frontend/.env.example` with `NEXT_PUBLIC_API_URL=http://localhost:8000`
-- [ ] Create `frontend/.env.local` with the actual API URL (git-ignored)
+- [x] Install additional dependencies: `npm install recharts`
+- [x] Install dev dependencies: `npm install -D vitest @testing-library/react @testing-library/jest-dom @vitejs/plugin-react jsdom`
+- [x] Create `frontend/.env.example` with `NEXT_PUBLIC_API_URL=http://localhost:8000`
+- [x] Create `frontend/.env.local` with the actual API URL (git-ignored)
 
 #### 2.2 Shared Types & Server Actions
-- [ ] Create `frontend/lib/types.ts` — `Transaction`, `TransactionCreate`, `Summary` TypeScript interfaces
-- [ ] Create `frontend/lib/actions.ts` — Server Action: `getTransactions(filters?)` → fetch GET `/transactions`
-- [ ] Add Server Action: `createTransaction(data)` → fetch POST `/transactions`
-- [ ] Add Server Action: `updateTransaction(id, data)` → fetch PUT `/transactions/{id}`
-- [ ] Add Server Action: `deleteTransaction(id)` → fetch DELETE `/transactions/{id}`
-- [ ] Add Server Action: `getSummary()` → fetch GET `/summary`
+- [x] Create `frontend/lib/types.ts` — `Transaction`, `TransactionCreate`, `Summary` TypeScript interfaces
+- [x] Create `frontend/lib/actions.ts` — Server Action: `getTransactions(filters?)` → fetch GET `/transactions`
+- [x] Add Server Action: `createTransaction(data)` → fetch POST `/transactions`
+- [x] Add Server Action: `updateTransaction(id, data)` → fetch PUT `/transactions/{id}`
+- [x] Add Server Action: `deleteTransaction(id)` → fetch DELETE `/transactions/{id}`
+- [x] Add Server Action: `getSummary()` → fetch GET `/summary`
 
 #### 2.3 Layout & Navigation
-- [ ] Create `frontend/components/Navbar.tsx` — nav links: Dashboard, Transactions, Add Transaction
-- [ ] Update `frontend/app/layout.tsx` — include Navbar, set page title, global font/styles
+- [x] Create `frontend/components/Navbar.tsx` — nav links: Dashboard, Transactions, Add Transaction
+- [x] Update `frontend/app/layout.tsx` — include Navbar, set page title, global font/styles
 
 #### 2.4 Dashboard Page
-- [ ] Create `frontend/components/SummaryCards.tsx` — three cards: Total Income, Total Expenses, Balance
-- [ ] Create `frontend/components/CategoryChart.tsx` — Recharts pie/donut chart showing category breakdown
-- [ ] Update `frontend/app/page.tsx` — Dashboard page that calls `getSummary()` and renders SummaryCards + CategoryChart
+- [x] Create `frontend/components/SummaryCards.tsx` — three cards: Total Income, Total Expenses, Balance
+- [x] Create `frontend/components/CategoryChart.tsx` — Recharts pie/donut chart showing category breakdown
+- [x] Update `frontend/app/page.tsx` — Dashboard page that calls `getSummary()` and renders SummaryCards + CategoryChart
 
 #### 2.5 Transactions List Page
-- [ ] Create `frontend/components/TransactionFilters.tsx` — filter by type, category; search by description
-- [ ] Create `frontend/components/TransactionList.tsx` — table/list of transactions with edit/delete actions
-- [ ] Create `frontend/app/transactions/page.tsx` — page that calls `getTransactions()`, renders filters + list
-- [ ] Wire up delete button to `deleteTransaction()` Server Action with confirmation
+- [x] Create `frontend/components/TransactionFilters.tsx` — filter by type, category; search by description
+- [x] Create `frontend/components/TransactionList.tsx` — table/list of transactions with edit/delete actions
+- [x] Create `frontend/app/transactions/page.tsx` — page that calls `getTransactions()`, renders filters + list
+- [x] Wire up delete button to `deleteTransaction()` Server Action with confirmation
 
 #### 2.6 Add / Edit Transaction Page
-- [ ] Create `frontend/components/TransactionForm.tsx` — form with fields: description, amount, type (dropdown), category (dropdown), date
-- [ ] Create `frontend/app/transactions/new/page.tsx` — renders TransactionForm, calls `createTransaction()` on submit
-- [ ] Add edit mode: `frontend/app/transactions/[id]/edit/page.tsx` — loads existing transaction, pre-fills form, calls `updateTransaction()` on submit
+- [x] Create `frontend/components/TransactionForm.tsx` — form with fields: description, amount, type (dropdown), category (dropdown), date
+- [x] Create `frontend/app/transactions/new/page.tsx` — renders TransactionForm, calls `createTransaction()` on submit
+- [x] Add edit mode: `frontend/app/transactions/[id]/edit/page.tsx` — loads existing transaction, pre-fills form, calls `updateTransaction()` on submit
 
 #### 2.7 Styling & Polish
-- [ ] Style Navbar with Tailwind (responsive, active link indicator)
-- [ ] Style SummaryCards with Tailwind (grid layout, colored accents for income/expense/balance)
-- [ ] Style TransactionList table with Tailwind (striped rows, hover states, responsive)
-- [ ] Style TransactionForm with Tailwind (form layout, input focus states, submit button)
-- [ ] Style TransactionFilters with Tailwind (inline filters, search input)
-- [ ] Add loading states / skeletons for async data fetching
-- [ ] Add empty states (no transactions yet message)
+- [x] Style Navbar with Tailwind (responsive, active link indicator)
+- [x] Style SummaryCards with Tailwind (grid layout, colored accents for income/expense/balance)
+- [x] Style TransactionList table with Tailwind (striped rows, hover states, responsive)
+- [x] Style TransactionForm with Tailwind (form layout, input focus states, submit button)
+- [x] Style TransactionFilters with Tailwind (inline filters, search input)
+- [x] Add loading states / skeletons for async data fetching
+- [x] Add empty states (no transactions yet message)
 
 ---
 
