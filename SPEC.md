@@ -208,45 +208,45 @@ personal-finance-tracker/
 ### Phase 3 — Integration
 
 #### 3.1 End-to-End Data Flow
-- [ ] Verify: Creating a transaction on frontend persists to Neon DB and appears in list
-- [ ] Verify: Editing a transaction updates the DB and reflects on frontend
-- [ ] Verify: Deleting a transaction removes from DB and disappears from frontend
-- [ ] Verify: Dashboard summary cards show correct totals from DB
-- [ ] Verify: Category chart renders correct breakdown from DB
-- [ ] Verify: Filters and search work correctly against backend query params
+- [x] Verify: Creating a transaction on frontend persists to Neon DB and appears in list
+- [x] Verify: Editing a transaction updates the DB and reflects on frontend
+- [x] Verify: Deleting a transaction removes from DB and disappears from frontend
+- [x] Verify: Dashboard summary cards show correct totals from DB
+- [x] Verify: Category chart renders correct breakdown from DB
+- [x] Verify: Filters and search work correctly against backend query params
 
 #### 3.2 Error Handling
-- [ ] Add error handling in Server Actions (try/catch, user-friendly error messages)
-- [ ] Display error messages on frontend when API calls fail
-- [ ] Handle 404 gracefully on edit page (transaction not found)
+- [x] Add error handling in Server Actions (try/catch, user-friendly error messages)
+- [x] Display error messages on frontend when API calls fail
+- [x] Handle 404 gracefully on edit page (transaction not found)
 
 ---
 
 ### Phase 4 — Testing
 
 #### 4.1 Backend Tests (pytest)
-- [ ] Create `backend/tests/__init__.py`
-- [ ] Create `backend/tests/conftest.py` — test database setup (SQLite in-memory), TestClient fixture
-- [ ] Write test: `POST /transactions` creates a transaction successfully
-- [ ] Write test: `POST /transactions` with invalid data returns 422
-- [ ] Write test: `GET /transactions` returns list of transactions
-- [ ] Write test: `GET /transactions?type=income` filters correctly
-- [ ] Write test: `GET /transactions?search=...` searches correctly
-- [ ] Write test: `GET /transactions/{id}` returns the correct transaction
-- [ ] Write test: `GET /transactions/{id}` with nonexistent ID returns 404
-- [ ] Write test: `PUT /transactions/{id}` updates a transaction
-- [ ] Write test: `PUT /transactions/{id}` with nonexistent ID returns 404
-- [ ] Write test: `DELETE /transactions/{id}` deletes a transaction
-- [ ] Write test: `DELETE /transactions/{id}` with nonexistent ID returns 404
-- [ ] Write test: `GET /summary` returns correct totals and category breakdown
-- [ ] Run all backend tests and confirm they pass: `cd backend && uv run pytest -v`
+- [x] Create `backend/tests/__init__.py`
+- [x] Create `backend/tests/conftest.py` — test database setup (SQLite in-memory), TestClient fixture
+- [x] Write test: `POST /transactions` creates a transaction successfully
+- [x] Write test: `POST /transactions` with invalid data returns 422
+- [x] Write test: `GET /transactions` returns list of transactions
+- [x] Write test: `GET /transactions?type=income` filters correctly
+- [x] Write test: `GET /transactions?search=...` searches correctly
+- [x] Write test: `GET /transactions/{id}` returns the correct transaction
+- [x] Write test: `GET /transactions/{id}` with nonexistent ID returns 404
+- [x] Write test: `PUT /transactions/{id}` updates a transaction
+- [x] Write test: `PUT /transactions/{id}` with nonexistent ID returns 404
+- [x] Write test: `DELETE /transactions/{id}` deletes a transaction
+- [x] Write test: `DELETE /transactions/{id}` with nonexistent ID returns 404
+- [x] Write test: `GET /summary` returns correct totals and category breakdown
+- [x] Run all backend tests and confirm they pass: `cd backend && uv run pytest -v`
 
 #### 4.2 Frontend Tests (Vitest)
-- [ ] Configure Vitest in `frontend/vitest.config.ts`
-- [ ] Create `frontend/__tests__/SummaryCards.test.tsx` — renders income, expense, balance values
-- [ ] Create `frontend/__tests__/TransactionList.test.tsx` — renders list of transactions, shows empty state
-- [ ] Create `frontend/__tests__/TransactionForm.test.tsx` — renders form fields, validates required inputs
-- [ ] Run all frontend tests and confirm they pass: `cd frontend && npx vitest run`
+- [x] Configure Vitest in `frontend/vitest.config.ts`
+- [x] Create `frontend/__tests__/SummaryCards.test.tsx` — renders income, expense, balance values
+- [x] Create `frontend/__tests__/TransactionList.test.tsx` — renders list of transactions, shows empty state
+- [x] Create `frontend/__tests__/TransactionForm.test.tsx` — renders form fields, validates required inputs
+- [x] Run all frontend tests and confirm they pass: `cd frontend && npx vitest run`
 
 ---
 
